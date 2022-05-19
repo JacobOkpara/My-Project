@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./login.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Login = () => {
   const [state, setState] = useState({
@@ -57,7 +57,7 @@ const Login = () => {
           Login Here
         </button>
         <p>
-          Do you have an account? <a href="#">Sign in</a>
+          Do you have an account? <Link to="/">Sign in</Link>
         </p>
       </form>
     </div>
